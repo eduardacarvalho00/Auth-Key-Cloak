@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"useDefineForClassFields": true,
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"allowJs": false,
+		"skipLibCheck": true,
+		"esModuleInterop": false,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"paths": {
+			"@api/*": ["./src/api/*"],
+			"@assets/*": ["./src/assets/*"],
+			"@components/*": ["./src/components/*"],
+			"@configs/*": ["./src/configs/*"],
+			"@constants/*": ["./src/constants/*"],
+			"@contexts/*": ["./src/contexts/*"],
+			"@errors/*": ["./src/errors/*"],
+			"@hooks/*": ["./src/hooks/*"],
+			"@interfaces/*": ["./src/interfaces/*"],
+			"@mutations/*": ["./src/mutations/*"],
+			"@pages/*": ["./src/pages/*"],
+			"@queries/*": ["./src/queries/*"],
+			"@routes/*": ["./src/routes/*"],
+			"@styles/*": ["./src/styles/*"],
+			"@utils/*": ["./src/utils/*"],
+			"@validations/*": ["./src/validations/*"],
+			"@/*": ["./src/*"]
+		}
+	},
+	"include": ["src"],
+	"references": [{ "path": "./tsconfig.node.json" }]
+}

@@ -1,0 +1,8 @@
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: templates
+
+jobs:
+  - template: react-js.azure-pipelines.yml@templates
